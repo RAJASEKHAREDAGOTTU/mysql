@@ -1,0 +1,13 @@
+ create table Bio_data(First_name varchar(20),Last_name varchar(20),Email_id varchar(20),Mobile_number int);
+Query OK, 0 rows affected (1.27 sec)
+
+mysql> desc Bio_data;
++---------------+-------------+------+-----+---------+-------+
+| Field         | Type        | Null | Key | Default | Extra |
++---------------+-------------+------+-----+---------+-------+
+| First_name    | varchar(20) | YES  |     | NULL    |       |
+| Last_name     | varchar(20) | YES  |     | NULL    |       |
+| Email_id      | varchar(20) | YES  |     | NULL    |       |
+| Mobile_number | int         | YES  |     | NULL    |       |
++---------------+-------------+------+-----+---------+-------+
+4 rows in set (0.10 sec)
