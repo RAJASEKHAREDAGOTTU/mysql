@@ -1,0 +1,52 @@
+create table Demo(id int,name varchar(100));
+Query OK, 0 rows affected (2.14 sec)
+
+mysql> select*from Demo;
+Empty set (0.13 sec)
+
+mysql> insert into Demo values(1,'Pavan');
+Query OK, 1 row affected (0.07 sec)
+
+mysql> select*from Demo;
++------+-------+
+| id   | name  |
++------+-------+
+|    1 | Pavan |
++------+-------+
+1 row in set (0.00 sec)
+
+mysql> insert into Demo values(2,'Rambo');
+Query OK, 1 row affected (0.28 sec)
+
+mysql> select*from Demo;
++------+-------+
+| id   | name  |
++------+-------+
+|    1 | Pavan |
+|    2 | Rambo |
++------+-------+
+2 rows in set (0.00 sec)
+
+mysql> update Demo set id=101,name='keerthi' where id=1;
+Query OK, 1 row affected (0.07 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select*from Demo;
++------+---------+
+| id   | name    |
++------+---------+
+|  101 | keerthi |
+|    2 | Rambo   |
++------+---------+
+2 rows in set (0.18 sec)
+
+mysql> Delete from Demo where id=101;
+Query OK, 1 row affected (0.29 sec)
+
+mysql> select*from Demo;
++------+-------+
+| id   | name  |
++------+-------+
+|    2 | Rambo |
++------+-------+
+1 row in set (0.00 sec)

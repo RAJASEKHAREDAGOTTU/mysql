@@ -1,0 +1,13 @@
+mysql> select*from students;
++---------+------------+-------------+
+| Roll_no | First_name | Second_name |
++---------+------------+-------------+
+|      20 | keerthi    | Pavan       |
++---------+------------+-------------+
+1 row in set (0.00 sec)
+
+mysql> Delete from students where Second_name='Pavan';
+Query OK, 1 row affected (0.30 sec)
+
+mysql> select*from students;
+Empty set (0.00 sec)
